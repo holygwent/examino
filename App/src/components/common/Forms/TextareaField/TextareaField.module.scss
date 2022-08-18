@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  width: 100%;
+  textarea {
+    font: inherit;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  textarea:focus-visible {
+    outline: none;
+  }
+  textarea::placeholder {
+    color: #808080;
+  }
+  textarea:disabled {
+    background-color: #f2f2f2;
+  }
+  textarea.invalid {
+    border-color: #dc3545;
+  }
+  .error {
+    color: #dc3545;
+  }
+}
